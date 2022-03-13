@@ -90,7 +90,7 @@ class multi_agent_env():
         self.target_current_health = self.target_health
 
         self.detected_reward = 50
-        self.goal_reward = 20
+        self.goal_reward = 5 # 20
         self.agent_score = np.array([0 for _ in range(self.n_agent)])
 
         # Used by OpenAI baselines

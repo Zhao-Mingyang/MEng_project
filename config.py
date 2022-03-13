@@ -1,6 +1,6 @@
 hidden_dim = 512
 
-max_step = 300 # 2000 for 100100 # 300 for 5050 700 for 7070
+max_step = 3500 # 2000 for 100100 # 300 for 5050 700 for 7070
 GAMMA = 0.99
 n_episode = 50000
 i_episode = 0
@@ -15,7 +15,7 @@ lamb = 0.001
 
 sensor_range = 21
 monitor_range = 3
-map_size = 50
+map_size = 150
 
 episode_length=max_step
 target_max_health = 10

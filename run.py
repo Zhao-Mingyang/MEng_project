@@ -29,7 +29,8 @@ model_tar = copy.deepcopy(model)
 # model_tar = DGN(n_ant, observation_space, hidden_dim, n_actions,mask_dim)
 model = model.cuda()
 model_tar = model_tar.cuda()
-
+# model.load_state_dict(torch.load('model_cifar.pt'))
+# model_tar.load_state_dict(torch.load('model_cifar.pt'))
 
 best_score = 0
 M_Null = torch.Tensor(np.array([np.eye(n_ant)] * batch_size)).cuda()
